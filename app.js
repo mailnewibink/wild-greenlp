@@ -39,4 +39,24 @@ document.addEventListener('DOMContentLoaded', () => {
       ssTrack.scrollBy({ left: 240, behavior: 'smooth' });
     });
   }
+
+  // Scroll Reveal Observer
+  const revealElements = document.querySelectorAll('.reveal, .reveal-scale');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, {
+      rootMargin: '0px 0px -30px 0px',
+      threshold: 0.08
+    });
+
+    revealElements.forEach(el => observer.observe(el));
+  } else {
+    revealElements.forEach(el => el.classList.add('revealed'));
+  }
 });
