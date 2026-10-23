@@ -59,4 +59,39 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     revealElements.forEach(el => el.classList.add('revealed'));
   }
+
+  // Support Us Spoiler / Accordion Toggle
+  const supportToggle = document.getElementById('supportToggle');
+  const supportContent = document.getElementById('supportContent');
+
+  function setSupportOpen(open) {
+    if (!supportToggle || !supportContent) return;
+    const isOpen = open !== undefined ? open : !supportContent.classList.contains('open');
+    if (isOpen) {
+      supportContent.classList.add('open');
+      supportToggle.classList.add('open');
+      supportToggle.setAttribute('aria-expanded', 'true');
+      supportContent.setAttribute('aria-hidden', 'false');
+      const hint = supportToggle.querySelector('.st-hint');
+      if (hint) hint.textContent = 'Klik untuk menutup';
+    } else {
+      supportContent.classList.remove('open');
+      supportToggle.classList.remove('open');
+      supportToggle.setAttribute('aria-expanded', 'false');
+      supportContent.setAttribute('aria-hidden', 'true');
+      const hint = supportToggle.querySelector('.st-hint');
+      if (hint) hint.textContent = 'Suka dengan game ini? Dukung pengembang';
+    }
+  }
+
+  if (supportToggle && supportContent) {
+    supportToggle.addEventListener('click', () => setSupportOpen());
+
+    // Auto-expand if user clicks any "Support Us" link in nav/footer
+    document.querySelectorAll('a[href="#support"]').forEach(anchor => {
+      anchor.addEventListener('click', () => {
+        setSupportOpen(true);
+      });
+    });
+  }
 });
