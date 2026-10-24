@@ -1,0 +1,232 @@
+// translations.js — Bilingual content dictionary (Indonesian & English) for Wild & Green
+window.TRANSLATIONS = {
+  id: {
+    pageTitle: "Wild & Green — Little Explorer, Brighter Tomorrow",
+    nav: {
+      fitur: "Fitur",
+      screenshots: "Screenshots",
+      karakter: "Karakter",
+      install: "Pasang APK",
+      support: '<i class="fa-solid fa-mug-hot"></i> Support Us',
+      cta: '<i class="fa-brands fa-android"></i> Unduh APK'
+    },
+    hero: {
+      tagline: "Little Explorer, Brighter Tomorrow",
+      title: 'Ajak Si Kecil Jelajahi <span class="gold">Keajaiban Alam</span> Lewat Kamera & AI',
+      lead: "Bidik bunga, hewan, atau dedaunan di sekitar rumah — AI mengidentifikasi spesies, membacakan ceritanya dalam Bahasa Indonesia, dan menyimpannya sebagai kartu polaroid koleksi anak.",
+      btnDownload: '<strong>Unduh APK v3.0</strong><small>67.3 MB &middot; Android 7.0+</small>',
+      btnScreenshots: '<i class="fa-solid fa-images"></i> Lihat Screenshots',
+      check1: '<i class="fa-solid fa-camera"></i> Pemindai AI Flora & Fauna',
+      check2: '<i class="fa-solid fa-volume-high"></i> Narasi Suara Ramah Anak',
+      check3: '<i class="fa-solid fa-wifi-slash"></i> Bisa Offline Tanpa Internet'
+    },
+    features: {
+      tag: "Fitur Unggulan",
+      title: "Apa yang Bisa Dilakukan Anak di Wild & Green?",
+      f1Title: "Kamera & AI Scanner",
+      f1Desc: "Arahkan kamera ke bunga, kupu-kupu, atau hewan peliharaan. AI langsung mengenali spesies, nama latin, habitat, dan tingkat kelangkaannya.",
+      f2Title: "Galeri Jemuran Polaroid",
+      f2Desc: "Setiap temuan disimpan sebagai kartu polaroid gantung di tali rami virtual dengan jepitan kayu — jurnal alam bergaya retro yang unik.",
+      f3Title: "Dengarkan Cerita",
+      f3Desc: "Fitur text-to-speech membacakan fakta unik tiap spesies dengan suara ramah berbahasa Indonesia — cocok untuk anak yang belum lancar membaca.",
+      f4Title: "Level Explorer & XP",
+      f4Desc: "Kumpulkan poin dari setiap temuan berdasarkan tingkat kelangkaan — naik level dari Penjelajah Pemula hingga Master Penjaga Alam."
+    },
+    screenshots: {
+      tag: "Tampilan Aplikasi",
+      title: "Cuplikan Layar Langsung dari HP",
+      l1: "Pilih Karakter",
+      l2: "Panduan Keselamatan",
+      l3: "Beranda Utama",
+      l4: "Kamera AI",
+      l5: "AI Menganalisis",
+      l6: "Hasil Analisis",
+      l7: "Galeri Koleksi"
+    },
+    characters: {
+      tag: "Teman Petualangan",
+      title: "Pilih Karakter Sahabat Jelajah",
+      sub: "Anak memilih salah satu karakter saat pertama kali membuka aplikasi. Setiap karakter punya tampilan unik yang menemani sepanjang petualangan!",
+      c1Name: "Lebah",
+      c1Desc: "Pencari Madu Gesit",
+      c2Name: "Shark",
+      c2Desc: "Penyelam Samudera Tangguh",
+      c3Name: "Panda",
+      c3Desc: "Pencinta Bambu Damai",
+      c4Name: "Dino",
+      c4Desc: "Penjelajah Purba Berani",
+      c5Name: "Beruang",
+      c5Desc: "Penjelajah Rimba Gagah",
+      c6Name: "Mawar",
+      c6Desc: "Puspa Cantik Harum",
+      c7Name: "Matahari",
+      c7Desc: "Sahabat Mentari Ceria",
+      c8Name: "Helve",
+      c8Desc: "Penjaga Daun Hutan",
+      c9Name: "Semut",
+      c9Desc: "Pekerja Alam Pantang Menyerah"
+    },
+    install: {
+      tag: "Panduan Pasang",
+      title: "4 Langkah Mudah Install APK",
+      s1Title: "Unduh Berkas APK",
+      s1Desc: "Tekan tombol <strong>Unduh APK</strong> di halaman ini. Tunggu hingga selesai terunduh.",
+      s2Title: "Buka File di Notifikasi",
+      s2Desc: "Ketuk notifikasi unduhan selesai, atau cari file <code>WildAndGreen-v3.apk</code> di folder Download.",
+      s3Title: "Izinkan Sumber Tak Dikenal",
+      s3Desc: 'Jika muncul peringatan, masuk ke <em>Pengaturan</em> lalu aktifkan <em>"Izinkan dari sumber ini"</em>.',
+      s4Title: "Instal & Mainkan!",
+      s4Desc: "Ketuk <strong>Instal</strong>, tunggu selesai. Ikon Wild & Green langsung muncul di layar HP."
+    },
+    download: {
+      title: "Unduh Wild & Green",
+      desc: "Berkas APK resmi langsung dari pengembang. Gratis, tanpa registrasi.",
+      specFileName: "Nama Berkas",
+      specVersion: "Versi",
+      specSize: "Ukuran",
+      specMinOS: "Minimum OS",
+      btn: "UNDUH APK SEKARANG",
+      qrTitle: '<i class="fa-solid fa-qrcode"></i> Scan di HP',
+      qrSub: "Pindai kamera untuk unduh langsung"
+    },
+    support: {
+      triggerTitle: "Support Us",
+      triggerBadge: "Bebas Iklan &amp; Gratis",
+      triggerHintClosed: "Suka dengan game ini? Dukung pengembang",
+      triggerHintOpen: "Klik untuk menutup",
+      badge: "Buy Me a Coffee",
+      title: "Dukung Wild &amp; Green Tetap Gratis &amp; 100% Bebas Iklan",
+      lead: "Aplikasi ini kami persembahkan sepenuhnya gratis tanpa biaya langganan dan tanpa iklan komersial apa pun, agar anak-anak Indonesia bisa belajar mengenal keindahan alam nusantara dengan aman dan gembira.",
+      desc: "Sebagai proyek independen, seluruh proses desain, riset kecerdasan buatan (AI) pengenal flora &amp; fauna, hingga server unduhan kami kelola secara mandiri. Jika karya ini membawa manfaat dan Anda ingin mengapresiasi karya kami, Anda bisa mentraktir secangkir kopi untuk developer via QRIS di samping.",
+      pill1Title: "100% Bebas Iklan Komersial",
+      pill1Desc: "Ruang bermain yang bersih, aman, dan tanpa distraksi untuk anak",
+      pill2Title: "Edukasi Alam Nusantara",
+      pill2Desc: "Membangun rasa ingin tahu dan kecintaan pada flora &amp; fauna Indonesia",
+      pill3Title: "Apresiasi &amp; Keberlanjutan",
+      pill3Desc: "Membantu operasional server dan update satwa &amp; tumbuhan baru berikutnya",
+      walletsNote: 'Menerima semua m-Banking &amp; e-Wallet di Indonesia: <strong>BCA, Mandiri, BRI, BNI, GoPay, OVO, DANA, ShopeePay, LinkAja</strong>, dan seluruh aplikasi berstandar QRIS.',
+      qrisInstruction: '<i class="fa-solid fa-camera"></i> Buka m-Banking / e-Wallet &amp; scan QR di atas',
+      qrisSaveBtn: '<i class="fa-solid fa-download"></i> Simpan Gambar QRIS'
+    },
+    footer: {
+      tagline: "Little Explorer, Brighter Tomorrow",
+      copy: "&copy; 2026 Wild &amp; Green. Seluruh hak cipta dilindungi.",
+      dev: "Developed by"
+    }
+  },
+
+  en: {
+    pageTitle: "Wild & Green — Little Explorer, Brighter Tomorrow",
+    nav: {
+      fitur: "Features",
+      screenshots: "Screenshots",
+      karakter: "Characters",
+      install: "Install Guide",
+      support: '<i class="fa-solid fa-mug-hot"></i> Support Us',
+      cta: '<i class="fa-brands fa-android"></i> Download APK'
+    },
+    hero: {
+      tagline: "Little Explorer, Brighter Tomorrow",
+      title: 'Let Little Explorers Discover <span class="gold">Nature\'s Wonders</span> with Camera & AI',
+      lead: "Point the camera at flowers, animals, or leaves around home — AI identifies the species, reads fascinating stories aloud, and preserves them as collectible polaroid cards.",
+      btnDownload: '<strong>Download APK v3.0</strong><small>67.3 MB &middot; Android 7.0+</small>',
+      btnScreenshots: '<i class="fa-solid fa-images"></i> View Screenshots',
+      check1: '<i class="fa-solid fa-camera"></i> AI Flora & Fauna Scanner',
+      check2: '<i class="fa-solid fa-volume-high"></i> Kid-Friendly Voice Narration',
+      check3: '<i class="fa-solid fa-wifi-slash"></i> Works Offline Without Internet'
+    },
+    features: {
+      tag: "Key Features",
+      title: "What Can Kids Do in Wild & Green?",
+      f1Title: "Camera & AI Scanner",
+      f1Desc: "Aim the camera at flowers, butterflies, or pets. AI instantly identifies the species, scientific name, natural habitat, and conservation rarity.",
+      f2Title: "Polaroid Clothesline Gallery",
+      f2Desc: "Every discovery is saved as a polaroid card hung on a virtual hemp clothesline with wooden pins — a delightfully unique retro nature journal.",
+      f3Title: "Listen to Stories",
+      f3Desc: "Text-to-speech reads fascinating facts about each species with a friendly voice — perfect for young children still learning to read.",
+      f4Title: "Explorer Levels & XP",
+      f4Desc: "Collect points from every discovery based on rarity — climb the ranks from Novice Explorer all the way to Master Nature Guardian."
+    },
+    screenshots: {
+      tag: "App Preview",
+      title: "Live Screenshots from the App",
+      l1: "Character Select",
+      l2: "Safety Guide",
+      l3: "Main Home",
+      l4: "AI Camera",
+      l5: "AI Scanning",
+      l6: "Scan Result",
+      l7: "Journal Gallery"
+    },
+    characters: {
+      tag: "Adventure Buddies",
+      title: "Choose Your Explorer Companion",
+      sub: "Kids choose a buddy when first launching the app. Each character brings a distinct personality to accompany their outdoor expedition!",
+      c1Name: "Bee",
+      c1Desc: "Swift Honey Seeker",
+      c2Name: "Shark",
+      c2Desc: "Resilient Ocean Diver",
+      c3Name: "Panda",
+      c3Desc: "Peaceful Bamboo Lover",
+      c4Name: "Dino",
+      c4Desc: "Brave Ancient Explorer",
+      c5Name: "Bear",
+      c5Desc: "Mighty Jungle Ranger",
+      c6Name: "Rose",
+      c6Desc: "Charming Sweet Blossom",
+      c7Name: "Sunflower",
+      c7Desc: "Cheerful Sun Buddy",
+      c8Name: "Helve",
+      c8Desc: "Forest Leaf Guardian",
+      c9Name: "Ant",
+      c9Desc: "Tireless Nature Worker"
+    },
+    install: {
+      tag: "Install Guide",
+      title: "4 Easy Steps to Install the APK",
+      s1Title: "Download APK File",
+      s1Desc: "Tap the <strong>Download APK</strong> button on this page and wait for the download to complete.",
+      s2Title: "Open Downloaded File",
+      s2Desc: "Tap the download notification, or locate <code>WildAndGreen-v3.apk</code> in your Downloads folder.",
+      s3Title: "Allow Unknown Sources",
+      s3Desc: 'If prompted by Android, open <em>Settings</em> and enable <em>"Allow from this source"</em>.',
+      s4Title: "Install & Enjoy!",
+      s4Desc: "Tap <strong>Install</strong> and let it finish. The Wild & Green icon will appear right on your screen."
+    },
+    download: {
+      title: "Download Wild & Green",
+      desc: "Official APK file directly from the developer. 100% Free, no registration required.",
+      specFileName: "File Name",
+      specVersion: "Version",
+      specSize: "Size",
+      specMinOS: "Minimum OS",
+      btn: "DOWNLOAD APK NOW",
+      qrTitle: '<i class="fa-solid fa-qrcode"></i> Scan on Phone',
+      qrSub: "Scan with camera for instant download"
+    },
+    support: {
+      triggerTitle: "Support Us",
+      triggerBadge: "100% Ad-Free &amp; Free",
+      triggerHintClosed: "Love this game? Support the developer",
+      triggerHintOpen: "Click to collapse",
+      badge: "Buy Me a Coffee",
+      title: "Support Wild &amp; Green to Stay Free &amp; 100% Ad-Free",
+      lead: "This game is presented entirely free with no subscription and zero commercial ads, so children can learn and explore nature safely, happily, and without distraction.",
+      desc: "As an independent indie creation, all design, AI species identification models, and download servers are funded on our own. If this project brings joy and you'd like to show appreciation, you can buy the developer a cup of coffee via QRIS.",
+      pill1Title: "100% Ad-Free Experience",
+      pill1Desc: "A clean, safe, and distraction-free learning space for kids",
+      pill2Title: "Nature Education",
+      pill2Desc: "Fostering curiosity and lifelong love for wildlife and plants",
+      pill3Title: "Creator Appreciation",
+      pill3Desc: "Supporting server costs and future animal & plant content updates",
+      walletsNote: 'Supports all Indonesian m-Banking &amp; e-Wallets: <strong>BCA, Mandiri, BRI, BNI, GoPay, OVO, DANA, ShopeePay, LinkAja</strong>, and all QRIS-compatible apps.',
+      qrisInstruction: '<i class="fa-solid fa-camera"></i> Open your m-Banking / e-Wallet &amp; scan QR above',
+      qrisSaveBtn: '<i class="fa-solid fa-download"></i> Save QRIS Image'
+    },
+    footer: {
+      tagline: "Little Explorer, Brighter Tomorrow",
+      copy: "&copy; 2026 Wild &amp; Green. All rights reserved.",
+      dev: "Developed by"
+    }
+  }
+};

@@ -48,14 +48,19 @@
         <img src="assets/hero/logo.png" alt="Wild & Green" class="brand-img">
       </a>
       <nav class="nav" id="nav">
-        <a href="#fitur">Fitur</a>
-        <a href="#screenshots">Screenshots</a>
-        <a href="#karakter">Karakter</a>
-        <a href="#install">Pasang APK</a>
-        <a href="#support"><i class="fa-solid fa-mug-hot"></i> Support Us</a>
+        <a href="#fitur" data-i18n="nav.fitur">Fitur</a>
+        <a href="#screenshots" data-i18n="nav.screenshots">Screenshots</a>
+        <a href="#karakter" data-i18n="nav.karakter">Karakter</a>
+        <a href="#install" data-i18n="nav.install">Pasang APK</a>
+        <a href="#support" data-i18n-html="nav.support"><i class="fa-solid fa-mug-hot"></i> Support Us</a>
       </nav>
       <div class="header-end">
-        <a href="#download" class="cta-btn cta-sm"><i class="fa-brands fa-android"></i> Unduh APK</a>
+        <div class="lang-switch" role="group" aria-label="Pilih Bahasa / Select Language">
+          <button type="button" class="lang-btn active" data-lang="id" aria-pressed="true">ID</button>
+          <span class="lang-divider">/</span>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a href="#download" class="cta-btn cta-sm" data-i18n-html="nav.cta"><i class="fa-brands fa-android"></i> Unduh APK</a>
         <button class="burger" id="burger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
       </div>
     </div>
@@ -68,25 +73,25 @@
     <div class="wrap hero-wrap">
 
       <div class="hero-copy">
-        <p class="tagline">Little Explorer, Brighter Tomorrow</p>
-        <h1>Ajak Si Kecil Jelajahi <span class="gold">Keajaiban Alam</span> Lewat Kamera & AI</h1>
-        <p class="lead">Bidik bunga, hewan, atau dedaunan di sekitar rumah — AI mengidentifikasi spesies, membacakan ceritanya dalam Bahasa Indonesia, dan menyimpannya sebagai kartu polaroid koleksi anak.</p>
+        <p class="tagline" data-i18n="hero.tagline">Little Explorer, Brighter Tomorrow</p>
+        <h1 data-i18n-html="hero.title">Ajak Si Kecil Jelajahi <span class="gold">Keajaiban Alam</span> Lewat Kamera & AI</h1>
+        <p class="lead" data-i18n="hero.lead">Bidik bunga, hewan, atau dedaunan di sekitar rumah — AI mengidentifikasi spesies, membacakan ceritanya dalam Bahasa Indonesia, dan menyimpannya sebagai kartu polaroid koleksi anak.</p>
 
         <div class="hero-btns">
           <a href="downloads/WildAndGreen-v3.apk" download class="cta-btn cta-lg">
             <i class="fa-brands fa-android"></i>
-            <span>
+            <span data-i18n-html="hero.btnDownload">
               <strong>Unduh APK v3.0</strong>
               <small>67.3 MB &middot; Android 7.0+</small>
             </span>
           </a>
-          <a href="#screenshots" class="ghost-btn"><i class="fa-solid fa-images"></i> Lihat Screenshots</a>
+          <a href="#screenshots" class="ghost-btn" data-i18n-html="hero.btnScreenshots"><i class="fa-solid fa-images"></i> Lihat Screenshots</a>
         </div>
 
         <ul class="checklist">
-          <li><i class="fa-solid fa-camera"></i> Pemindai AI Flora & Fauna</li>
-          <li><i class="fa-solid fa-volume-high"></i> Narasi Suara Bahasa Indonesia</li>
-          <li><i class="fa-solid fa-wifi-slash"></i> Bisa Offline Tanpa Internet</li>
+          <li data-i18n-html="hero.check1"><i class="fa-solid fa-camera"></i> Pemindai AI Flora & Fauna</li>
+          <li data-i18n-html="hero.check2"><i class="fa-solid fa-volume-high"></i> Narasi Suara Ramah Anak</li>
+          <li data-i18n-html="hero.check3"><i class="fa-solid fa-wifi-slash"></i> Bisa Offline Tanpa Internet</li>
         </ul>
       </div>
 
@@ -134,30 +139,30 @@
   <section class="section" id="fitur">
     <div class="wrap">
       <header class="sec-head reveal">
-        <p class="sec-tag">Fitur Unggulan</p>
-        <h2>Apa yang Bisa Dilakukan Anak di Wild & Green?</h2>
+        <p class="sec-tag" data-i18n="features.tag">Fitur Unggulan</p>
+        <h2 data-i18n="features.title">Apa yang Bisa Dilakukan Anak di Wild & Green?</h2>
       </header>
 
       <div class="feat-grid">
         <article class="feat reveal stagger-1">
           <div class="feat-ico"><i class="fa-solid fa-camera-retro"></i></div>
-          <h3>Kamera & AI Scanner</h3>
-          <p>Arahkan kamera ke bunga, kupu-kupu, atau hewan peliharaan. AI langsung mengenali spesies, nama latin, habitat, dan tingkat kelangkaannya.</p>
+          <h3 data-i18n="features.f1Title">Kamera & AI Scanner</h3>
+          <p data-i18n="features.f1Desc">Arahkan kamera ke bunga, kupu-kupu, atau hewan peliharaan. AI langsung mengenali spesies, nama latin, habitat, dan tingkat kelangkaannya.</p>
         </article>
         <article class="feat reveal stagger-2">
           <div class="feat-ico"><i class="fa-solid fa-image"></i></div>
-          <h3>Galeri Jemuran Polaroid</h3>
-          <p>Setiap temuan disimpan sebagai kartu polaroid gantung di tali rami virtual dengan jepitan kayu — jurnal alam bergaya retro yang unik.</p>
+          <h3 data-i18n="features.f2Title">Galeri Jemuran Polaroid</h3>
+          <p data-i18n="features.f2Desc">Setiap temuan disimpan sebagai kartu polaroid gantung di tali rami virtual dengan jepitan kayu — jurnal alam bergaya retro yang unik.</p>
         </article>
         <article class="feat reveal stagger-3">
           <div class="feat-ico"><i class="fa-solid fa-headphones"></i></div>
-          <h3>Dengarkan Cerita</h3>
-          <p>Fitur text-to-speech membacakan fakta unik tiap spesies dengan suara ramah berbahasa Indonesia — cocok untuk anak yang belum lancar membaca.</p>
+          <h3 data-i18n="features.f3Title">Dengarkan Cerita</h3>
+          <p data-i18n="features.f3Desc">Fitur text-to-speech membacakan fakta unik tiap spesies dengan suara ramah berbahasa Indonesia — cocok untuk anak yang belum lancar membaca.</p>
         </article>
         <article class="feat reveal stagger-4">
           <div class="feat-ico"><i class="fa-solid fa-trophy"></i></div>
-          <h3>Level Explorer & XP</h3>
-          <p>Kumpulkan poin dari setiap temuan berdasarkan tingkat kelangkaan — naik level dari Penjelajah Pemula hingga Master Penjaga Alam.</p>
+          <h3 data-i18n="features.f4Title">Level Explorer & XP</h3>
+          <p data-i18n="features.f4Desc">Kumpulkan poin dari setiap temuan berdasarkan tingkat kelangkaan — naik level dari Penjelajah Pemula hingga Master Penjaga Alam.</p>
         </article>
       </div>
     </div>
@@ -169,45 +174,45 @@
   <section class="section section-warm" id="screenshots">
     <div class="wrap">
       <header class="sec-head reveal">
-        <p class="sec-tag">Tampilan Aplikasi</p>
-        <h2>Cuplikan Layar Langsung dari HP</h2>
+        <p class="sec-tag" data-i18n="screenshots.tag">Tampilan Aplikasi</p>
+        <h2 data-i18n="screenshots.title">Cuplikan Layar Langsung dari HP</h2>
       </header>
 
       <div class="ss-track-container reveal">
         <button class="ss-arrow ss-arrow-prev" id="ssPrev" aria-label="Sebelumnya"><i class="fa-solid fa-chevron-left"></i></button>
 
         <div class="ss-track" id="ssTrack">
-          <div class="ss-phone" data-label="Pilih Karakter">
+          <div class="ss-phone" data-label="Pilih Karakter" data-label-i18n="screenshots.l1">
             <div class="ss-bezel">
               <img src="assets/screenshots/ss-character.jpg" alt="Layar pilih karakter" loading="lazy" decoding="async" width="460" height="1024">
             </div>
           </div>
-          <div class="ss-phone" data-label="Panduan Keselamatan">
+          <div class="ss-phone" data-label="Panduan Keselamatan" data-label-i18n="screenshots.l2">
             <div class="ss-bezel">
               <img src="assets/screenshots/ss-safety.jpg" alt="Layar panduan keselamatan" loading="lazy" decoding="async" width="460" height="1024">
             </div>
           </div>
-          <div class="ss-phone" data-label="Beranda Utama">
+          <div class="ss-phone" data-label="Beranda Utama" data-label-i18n="screenshots.l3">
             <div class="ss-bezel">
               <img src="assets/screenshots/ss-home.jpg" alt="Layar beranda utama" loading="lazy" decoding="async" width="460" height="1024">
             </div>
           </div>
-          <div class="ss-phone" data-label="Kamera AI">
+          <div class="ss-phone" data-label="Kamera AI" data-label-i18n="screenshots.l4">
             <div class="ss-bezel">
               <img src="assets/screenshots/ss-camera.jpg" alt="Layar kamera AI" loading="lazy" decoding="async" width="460" height="1024">
             </div>
           </div>
-          <div class="ss-phone" data-label="AI Menganalisis">
+          <div class="ss-phone" data-label="AI Menganalisis" data-label-i18n="screenshots.l5">
             <div class="ss-bezel">
               <img src="assets/screenshots/ss-scanning.jpg" alt="AI sedang menganalisis" loading="lazy" decoding="async" width="460" height="1024">
             </div>
           </div>
-          <div class="ss-phone" data-label="Hasil Analisis">
+          <div class="ss-phone" data-label="Hasil Analisis" data-label-i18n="screenshots.l6">
             <div class="ss-bezel">
               <img src="assets/screenshots/ss-result.jpg" alt="Hasil analisis AI flora dan fauna" loading="lazy" decoding="async" width="460" height="1024">
             </div>
           </div>
-          <div class="ss-phone" data-label="Galeri Koleksi">
+          <div class="ss-phone" data-label="Galeri Koleksi" data-label-i18n="screenshots.l7">
             <div class="ss-bezel">
               <img src="assets/screenshots/ss-gallery.jpg" alt="Galeri polaroid jemuran koleksi anak" loading="lazy" decoding="async" width="460" height="1024">
             </div>
@@ -225,9 +230,9 @@
   <section class="section" id="karakter">
     <div class="wrap">
       <header class="sec-head reveal">
-        <p class="sec-tag">Teman Petualangan</p>
-        <h2>Pilih Karakter Sahabat Jelajah</h2>
-        <p class="sec-sub">Anak memilih salah satu karakter saat pertama kali membuka aplikasi. Setiap karakter punya tampilan unik yang menemani sepanjang petualangan!</p>
+        <p class="sec-tag" data-i18n="characters.tag">Teman Petualangan</p>
+        <h2 data-i18n="characters.title">Pilih Karakter Sahabat Jelajah</h2>
+        <p class="sec-sub" data-i18n="characters.sub">Anak memilih salah satu karakter saat pertama kali membuka aplikasi. Setiap karakter punya tampilan unik yang menemani sepanjang petualangan!</p>
       </header>
 
       <div class="char-showcase">
@@ -238,8 +243,8 @@
               <img src="assets/hero/Lebah.png" alt="Lebah" loading="lazy" decoding="async" width="240" height="240">
             </picture>
           </div>
-          <h3 class="char-name">Lebah</h3>
-          <p class="char-title">Pencari Madu Gesit</p>
+          <h3 class="char-name" data-i18n="characters.c1Name">Lebah</h3>
+          <p class="char-title" data-i18n="characters.c1Desc">Pencari Madu Gesit</p>
         </div>
 
         <div class="char-item reveal stagger-2">
@@ -249,8 +254,8 @@
               <img src="assets/hero/Hiu.png" alt="Shark" loading="lazy" decoding="async" width="240" height="240">
             </picture>
           </div>
-          <h3 class="char-name">Shark</h3>
-          <p class="char-title">Penyelam Samudera Tangguh</p>
+          <h3 class="char-name" data-i18n="characters.c2Name">Shark</h3>
+          <p class="char-title" data-i18n="characters.c2Desc">Penyelam Samudera Tangguh</p>
         </div>
 
         <div class="char-item reveal stagger-3">
@@ -260,8 +265,8 @@
               <img src="assets/hero/Panda.png" alt="Panda" loading="lazy" decoding="async" width="240" height="240">
             </picture>
           </div>
-          <h3 class="char-name">Panda</h3>
-          <p class="char-title">Pencinta Bambu Damai</p>
+          <h3 class="char-name" data-i18n="characters.c3Name">Panda</h3>
+          <p class="char-title" data-i18n="characters.c3Desc">Pencinta Bambu Damai</p>
         </div>
 
         <div class="char-item reveal stagger-4">
@@ -271,8 +276,8 @@
               <img src="assets/hero/Dino.png" alt="Dino" loading="lazy" decoding="async" width="240" height="240">
             </picture>
           </div>
-          <h3 class="char-name">Dino</h3>
-          <p class="char-title">Penjelajah Purba Berani</p>
+          <h3 class="char-name" data-i18n="characters.c4Name">Dino</h3>
+          <p class="char-title" data-i18n="characters.c4Desc">Penjelajah Purba Berani</p>
         </div>
 
         <div class="char-item reveal stagger-5">
@@ -282,8 +287,8 @@
               <img src="assets/hero/Beruang.png" alt="Beruang" loading="lazy" decoding="async" width="240" height="240">
             </picture>
           </div>
-          <h3 class="char-name">Beruang</h3>
-          <p class="char-title">Penjelajah Rimba Gagah</p>
+          <h3 class="char-name" data-i18n="characters.c5Name">Beruang</h3>
+          <p class="char-title" data-i18n="characters.c5Desc">Penjelajah Rimba Gagah</p>
         </div>
 
         <div class="char-item reveal stagger-6">
@@ -293,8 +298,8 @@
               <img src="assets/hero/Rose.png" alt="Mawar" loading="lazy" decoding="async" width="240" height="240">
             </picture>
           </div>
-          <h3 class="char-name">Mawar</h3>
-          <p class="char-title">Puspa Cantik Harum</p>
+          <h3 class="char-name" data-i18n="characters.c6Name">Mawar</h3>
+          <p class="char-title" data-i18n="characters.c6Desc">Puspa Cantik Harum</p>
         </div>
 
         <div class="char-item reveal stagger-7">
@@ -304,8 +309,8 @@
               <img src="assets/hero/Bunga_Matahari.png" alt="Matahari" loading="lazy" decoding="async" width="240" height="240">
             </picture>
           </div>
-          <h3 class="char-name">Matahari</h3>
-          <p class="char-title">Sahabat Mentari Ceria</p>
+          <h3 class="char-name" data-i18n="characters.c7Name">Matahari</h3>
+          <p class="char-title" data-i18n="characters.c7Desc">Sahabat Mentari Ceria</p>
         </div>
 
         <div class="char-item reveal stagger-8">
@@ -315,8 +320,8 @@
               <img src="assets/hero/Helve.png" alt="Helve" loading="lazy" decoding="async" width="240" height="240">
             </picture>
           </div>
-          <h3 class="char-name">Helve</h3>
-          <p class="char-title">Penjaga Daun Hutan</p>
+          <h3 class="char-name" data-i18n="characters.c8Name">Helve</h3>
+          <p class="char-title" data-i18n="characters.c8Desc">Penjaga Daun Hutan</p>
         </div>
 
         <div class="char-item reveal stagger-9">
@@ -326,8 +331,8 @@
               <img src="assets/hero/Semut.png" alt="Semut" loading="lazy" decoding="async" width="240" height="240">
             </picture>
           </div>
-          <h3 class="char-name">Semut</h3>
-          <p class="char-title">Pekerja Alam Pantang Menyerah</p>
+          <h3 class="char-name" data-i18n="characters.c9Name">Semut</h3>
+          <p class="char-title" data-i18n="characters.c9Desc">Pekerja Alam Pantang Menyerah</p>
         </div>
       </div>
     </div>
@@ -339,30 +344,30 @@
   <section class="section section-warm" id="install">
     <div class="wrap">
       <header class="sec-head reveal">
-        <p class="sec-tag">Panduan Pasang</p>
-        <h2>4 Langkah Mudah Install APK</h2>
+        <p class="sec-tag" data-i18n="install.tag">Panduan Pasang</p>
+        <h2 data-i18n="install.title">4 Langkah Mudah Install APK</h2>
       </header>
 
       <div class="steps">
         <div class="step reveal stagger-1">
           <div class="step-n">1</div>
-          <h4>Unduh Berkas APK</h4>
-          <p>Tekan tombol <strong>Unduh APK</strong> di halaman ini. Tunggu hingga selesai terunduh.</p>
+          <h4 data-i18n="install.s1Title">Unduh Berkas APK</h4>
+          <p data-i18n-html="install.s1Desc">Tekan tombol <strong>Unduh APK</strong> di halaman ini. Tunggu hingga selesai terunduh.</p>
         </div>
         <div class="step reveal stagger-2">
           <div class="step-n">2</div>
-          <h4>Buka File di Notifikasi</h4>
-          <p>Ketuk notifikasi unduhan selesai, atau cari file <code>WildAndGreen-v3.apk</code> di folder Download.</p>
+          <h4 data-i18n="install.s2Title">Buka File di Notifikasi</h4>
+          <p data-i18n-html="install.s2Desc">Ketuk notifikasi unduhan selesai, atau cari file <code>WildAndGreen-v3.apk</code> di folder Download.</p>
         </div>
         <div class="step reveal stagger-3">
           <div class="step-n">3</div>
-          <h4>Izinkan Sumber Tak Dikenal</h4>
-          <p>Jika muncul peringatan, masuk ke <em>Pengaturan</em> lalu aktifkan <em>"Izinkan dari sumber ini"</em>.</p>
+          <h4 data-i18n="install.s3Title">Izinkan Sumber Tak Dikenal</h4>
+          <p data-i18n-html="install.s3Desc">Jika muncul peringatan, masuk ke <em>Pengaturan</em> lalu aktifkan <em>"Izinkan dari sumber ini"</em>.</p>
         </div>
         <div class="step reveal stagger-4">
           <div class="step-n">4</div>
-          <h4>Instal & Mainkan!</h4>
-          <p>Ketuk <strong>Instal</strong>, tunggu selesai. Ikon Wild & Green langsung muncul di layar HP.</p>
+          <h4 data-i18n="install.s4Title">Instal & Mainkan!</h4>
+          <p data-i18n-html="install.s4Desc">Ketuk <strong>Instal</strong>, tunggu selesai. Ikon Wild & Green langsung muncul di layar HP.</p>
         </div>
       </div>
     </div>
@@ -376,26 +381,26 @@
       <div class="dl-card reveal-scale">
         <div class="dl-info">
           <img src="assets/hero/logo.png" alt="Logo" class="dl-logo">
-          <h2>Unduh Wild & Green</h2>
-          <p>Berkas APK resmi langsung dari pengembang. Gratis, tanpa registrasi.</p>
+          <h2 data-i18n="download.title">Unduh Wild & Green</h2>
+          <p data-i18n="download.desc">Berkas APK resmi langsung dari pengembang. Gratis, tanpa registrasi.</p>
 
           <table class="dl-specs">
-            <tr><td>Nama Berkas</td><td><strong>WildAndGreen-v3.apk</strong></td></tr>
-            <tr><td>Versi</td><td><strong>3.0.0</strong></td></tr>
-            <tr><td>Ukuran</td><td><strong>67.3 MB</strong></td></tr>
-            <tr><td>Minimum OS</td><td><strong>Android 7.0 (Nougat)</strong></td></tr>
+            <tr><td data-i18n="download.specFileName">Nama Berkas</td><td><strong>WildAndGreen-v3.apk</strong></td></tr>
+            <tr><td data-i18n="download.specVersion">Versi</td><td><strong>3.0.0</strong></td></tr>
+            <tr><td data-i18n="download.specSize">Ukuran</td><td><strong>67.3 MB</strong></td></tr>
+            <tr><td data-i18n="download.specMinOS">Minimum OS</td><td><strong>Android 7.0 (Nougat)</strong></td></tr>
           </table>
 
           <div class="dl-actions">
             <a href="downloads/WildAndGreen-v3.apk" download class="cta-btn cta-xl">
               <i class="fa-brands fa-android"></i>
-              <span>UNDUH APK SEKARANG</span>
+              <span data-i18n="download.btn">UNDUH APK SEKARANG</span>
             </a>
             <div class="dl-qr-box">
               <img src="assets/qr-download.png" alt="Scan QR Download APK Wild & Green" class="dl-qr-img" width="82" height="82">
               <div class="dl-qr-text">
-                <span class="dl-qr-title"><i class="fa-solid fa-qrcode"></i> Scan di HP</span>
-                <span class="dl-qr-sub">Pindai kamera untuk unduh langsung</span>
+                <span class="dl-qr-title" data-i18n-html="download.qrTitle"><i class="fa-solid fa-qrcode"></i> Scan di HP</span>
+                <span class="dl-qr-sub" data-i18n="download.qrSub">Pindai kamera untuk unduh langsung</span>
               </div>
             </div>
           </div>
@@ -424,11 +429,11 @@
         <button class="support-toggle-btn" id="supportToggle" type="button" aria-expanded="false" aria-controls="supportContent">
           <div class="st-left">
             <span class="st-icon"><i class="fa-solid fa-mug-hot"></i></span>
-            <span class="st-title">Support Us</span>
-            <span class="st-badge">Bebas Iklan &amp; Gratis</span>
+            <span class="st-title" data-i18n="support.triggerTitle">Support Us</span>
+            <span class="st-badge" data-i18n-html="support.triggerBadge">Bebas Iklan &amp; Gratis</span>
           </div>
           <div class="st-right">
-            <span class="st-hint">Suka dengan game ini? Dukung pengembang</span>
+            <span class="st-hint" data-i18n="support.triggerHintClosed">Suka dengan game ini? Dukung pengembang</span>
             <span class="st-chevron"><i class="fa-solid fa-chevron-down"></i></span>
           </div>
         </button>
@@ -438,13 +443,13 @@
             <div class="support-content">
               <div class="support-badge">
                 <i class="fa-solid fa-mug-hot"></i>
-                <span>Buy Me a Coffee</span>
+                <span data-i18n="support.badge">Buy Me a Coffee</span>
               </div>
-              <h2>Dukung Wild &amp; Green Tetap Gratis &amp; 100% Bebas Iklan</h2>
-              <p class="support-lead">
+              <h2 data-i18n-html="support.title">Dukung Wild &amp; Green Tetap Gratis &amp; 100% Bebas Iklan</h2>
+              <p class="support-lead" data-i18n="support.lead">
                 Aplikasi ini kami persembahkan sepenuhnya gratis tanpa biaya langganan dan tanpa iklan komersial apa pun, agar anak-anak Indonesia bisa belajar mengenal keindahan alam nusantara dengan aman dan gembira.
               </p>
-              <p class="support-desc">
+              <p class="support-desc" data-i18n="support.desc">
                 Sebagai proyek independen, seluruh proses desain, riset kecerdasan buatan (AI) pengenal flora &amp; fauna, hingga server unduhan kami kelola secara mandiri. Jika karya ini membawa manfaat dan Anda ingin mengapresiasi karya kami, Anda bisa mentraktir secangkir kopi untuk developer via QRIS di samping.
               </p>
 
@@ -452,29 +457,29 @@
                 <div class="support-pill">
                   <div class="sp-icon"><i class="fa-solid fa-ban"></i></div>
                   <div>
-                    <strong>100% Bebas Iklan Komersial</strong>
-                    <span>Ruang bermain yang bersih, aman, dan tanpa distraksi untuk anak</span>
+                    <strong data-i18n="support.pill1Title">100% Bebas Iklan Komersial</strong>
+                    <span data-i18n="support.pill1Desc">Ruang bermain yang bersih, aman, dan tanpa distraksi untuk anak</span>
                   </div>
                 </div>
                 <div class="support-pill">
                   <div class="sp-icon"><i class="fa-solid fa-seedling"></i></div>
                   <div>
-                    <strong>Edukasi Alam Nusantara</strong>
-                    <span>Membangun rasa ingin tahu dan kecintaan pada flora &amp; fauna Indonesia</span>
+                    <strong data-i18n="support.pill2Title">Edukasi Alam Nusantara</strong>
+                    <span data-i18n="support.pill2Desc">Membangun rasa ingin tahu dan kecintaan pada flora &amp; fauna Indonesia</span>
                   </div>
                 </div>
                 <div class="support-pill">
                   <div class="sp-icon"><i class="fa-solid fa-heart"></i></div>
                   <div>
-                    <strong>Apresiasi &amp; Keberlanjutan</strong>
-                    <span>Membantu operasional server dan update satwa &amp; tumbuhan baru berikutnya</span>
+                    <strong data-i18n="support.pill3Title">Apresiasi &amp; Keberlanjutan</strong>
+                    <span data-i18n="support.pill3Desc">Membantu operasional server dan update satwa &amp; tumbuhan baru berikutnya</span>
                   </div>
                 </div>
               </div>
 
               <div class="support-wallets-note">
                 <i class="fa-solid fa-circle-check"></i>
-                <span>Menerima semua m-Banking &amp; e-Wallet di Indonesia: <strong>BCA, Mandiri, BRI, BNI, GoPay, OVO, DANA, ShopeePay, LinkAja</strong>, dan seluruh aplikasi berstandar QRIS.</span>
+                <span data-i18n-html="support.walletsNote">Menerima semua m-Banking &amp; e-Wallet di Indonesia: <strong>BCA, Mandiri, BRI, BNI, GoPay, OVO, DANA, ShopeePay, LinkAja</strong>, dan seluruh aplikasi berstandar QRIS.</span>
               </div>
             </div>
 
@@ -491,10 +496,10 @@
                 </div>
 
                 <div class="qris-card-footer">
-                  <p class="qris-instruction">
+                  <p class="qris-instruction" data-i18n-html="support.qrisInstruction">
                     <i class="fa-solid fa-camera"></i> Buka m-Banking / e-Wallet &amp; scan QR di atas
                   </p>
-                  <a href="assets/qris-donasi.jpg" download="QRIS-WildAndGreen-YuddesignStudio.jpg" class="ghost-btn qris-save-btn">
+                  <a href="assets/qris-donasi.jpg" download="QRIS-WildAndGreen-YuddesignStudio.jpg" class="ghost-btn qris-save-btn" data-i18n-html="support.qrisSaveBtn">
                     <i class="fa-solid fa-download"></i> Simpan Gambar QRIS
                   </a>
                 </div>
@@ -513,20 +518,20 @@
     <div class="wrap footer-wrap">
       <div class="footer-brand">
         <img src="assets/hero/logo.png" alt="Wild & Green" class="footer-logo">
-        <p>Little Explorer, Brighter Tomorrow</p>
+        <p data-i18n="footer.tagline">Little Explorer, Brighter Tomorrow</p>
       </div>
       <div class="footer-nav">
-        <a href="#fitur">Fitur</a>
-        <a href="#screenshots">Screenshots</a>
-        <a href="#karakter">Karakter</a>
-        <a href="#install">Panduan Pasang</a>
-        <a href="#download">Unduh APK</a>
-        <a href="#support"><i class="fa-solid fa-mug-hot"></i> Support Us</a>
+        <a href="#fitur" data-i18n="nav.fitur">Fitur</a>
+        <a href="#screenshots" data-i18n="nav.screenshots">Screenshots</a>
+        <a href="#karakter" data-i18n="nav.karakter">Karakter</a>
+        <a href="#install" data-i18n="nav.install">Panduan Pasang</a>
+        <a href="#download" data-i18n="nav.cta">Unduh APK</a>
+        <a href="#support" data-i18n-html="nav.support"><i class="fa-solid fa-mug-hot"></i> Support Us</a>
       </div>
       <div class="footer-bottom">
-        <p class="footer-copy">&copy; 2026 Wild & Green. Seluruh hak cipta dilindungi.</p>
+        <p class="footer-copy" data-i18n-html="footer.copy">&copy; 2026 Wild &amp; Green. Seluruh hak cipta dilindungi.</p>
         <div class="footer-dev">
-          <span>Developed by</span>
+          <span data-i18n="footer.dev">Developed by</span>
           <img src="assets/ydsn-logo.png" alt="ydsn studio" class="footer-dev-logo">
           <strong>ydsn studio</strong>
         </div>
@@ -534,6 +539,7 @@
     </div>
   </footer>
 
+  <script src="translations.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

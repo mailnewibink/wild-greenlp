@@ -72,15 +72,21 @@ document.addEventListener('DOMContentLoaded', () => {
       supportToggle.classList.add('open');
       supportToggle.setAttribute('aria-expanded', 'true');
       supportContent.setAttribute('aria-hidden', 'false');
+      const t = (window.TRANSLATIONS && window.TRANSLATIONS[document.documentElement.lang || 'id']) || window.TRANSLATIONS?.id;
       const hint = supportToggle.querySelector('.st-hint');
-      if (hint) hint.textContent = 'Klik untuk menutup';
+      if (hint && t) {
+        hint.textContent = isOpen ? t.support.triggerHintOpen : t.support.triggerHintClosed;
+      }
     } else {
       supportContent.classList.remove('open');
       supportToggle.classList.remove('open');
       supportToggle.setAttribute('aria-expanded', 'false');
       supportContent.setAttribute('aria-hidden', 'true');
+      const t = (window.TRANSLATIONS && window.TRANSLATIONS[document.documentElement.lang || 'id']) || window.TRANSLATIONS?.id;
       const hint = supportToggle.querySelector('.st-hint');
-      if (hint) hint.textContent = 'Suka dengan game ini? Dukung pengembang';
+      if (hint && t) {
+        hint.textContent = isOpen ? t.support.triggerHintOpen : t.support.triggerHintClosed;
+      }
     }
   }
 
@@ -94,4 +100,70 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // Language Switcher Logic
+  const savedLang = localStorage.getItem('wildgreen_lang') || 'id';
+
+  function applyLanguage(lang) {
+    if (!window.TRANSLATIONS || !window.TRANSLATIONS[lang]) return;
+    const t = window.TRANSLATIONS[lang];
+    document.documentElement.lang = lang;
+    localStorage.setItem('wildgreen_lang', lang);
+
+    // Update active state on toggle buttons
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      const isActive = btn.dataset.lang === lang;
+      btn.classList.toggle('active', isActive);
+      btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    });
+
+    // Update text elements via data-i18n
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      const val = key.split('.').reduce((obj, k) => (obj ? obj[k] : null), t);
+      if (val !== null && val !== undefined) {
+        el.textContent = val;
+      }
+    });
+
+    // Update html elements via data-i18n-html
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+      const key = el.getAttribute('data-i18n-html');
+      const val = key.split('.').reduce((obj, k) => (obj ? obj[k] : null), t);
+      if (val !== null && val !== undefined) {
+        el.innerHTML = val;
+      }
+    });
+
+    // Update attributes like data-label for screenshot phones
+    document.querySelectorAll('.ss-phone[data-label-i18n]').forEach(el => {
+      const key = el.getAttribute('data-label-i18n');
+      const val = key.split('.').reduce((obj, k) => (obj ? obj[k] : null), t);
+      if (val) {
+        el.setAttribute('data-label', val);
+      }
+    });
+
+    // Update spoiler hint text based on current open state
+    if (supportToggle && supportContent) {
+      const hint = supportToggle.querySelector('.st-hint');
+      if (hint) {
+        hint.textContent = supportContent.classList.contains('open')
+          ? t.support.triggerHintOpen
+          : t.support.triggerHintClosed;
+      }
+    }
+  }
+
+  // Bind click handlers to lang switch buttons
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const lang = btn.dataset.lang;
+      applyLanguage(lang);
+    });
+  });
+
+  // Initial apply
+  applyLanguage(savedLang);
 });
