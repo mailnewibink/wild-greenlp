@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/downloads/WildAndGreen-v3.apk",
+      "destination": "/downloads/WildAndGreen-v3.1.apk",
+      "permanent": false
+    },
+    {
+      "source": "/downloads/WildAndGreen-v2.1.apk",
+      "destination": "/downloads/WildAndGreen-v3.1.apk",
+      "permanent": false
+    }
+  ]
+}
